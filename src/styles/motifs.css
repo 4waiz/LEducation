@@ -1,0 +1,41 @@
+﻿@layer utilities {
+  .bg-grid {
+    background-image: linear-gradient(rgba(255, 183, 3, 0.14) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 183, 3, 0.14) 1px, transparent 1px);
+    background-size: 36px 36px;
+    background-position: -1px -1px;
+  }
+
+  .bg-blueprint-dots {
+    background-image: radial-gradient(rgba(109, 215, 200, 0.22) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .bg-chalk-wash {
+    background-image: linear-gradient(180deg, rgba(255, 183, 3, 0.08), transparent 45%),
+      radial-gradient(circle at 15% 25%, rgba(109, 215, 200, 0.1), transparent 55%),
+      radial-gradient(circle at 75% 10%, rgba(255, 107, 107, 0.08), transparent 60%);
+  }
+
+  .bg-chalk-noise {
+    background-image: radial-gradient(rgba(26, 26, 31, 0.06) 1px, transparent 1px);
+    background-size: 18px 18px;
+    opacity: 0.25;
+  }
+
+  .scanline {
+    background-image: linear-gradient(180deg, transparent 0%, rgba(255, 183, 3, 0.25) 40%, transparent 70%);
+  }
+
+  .glass-panel {
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.75), rgba(255, 248, 239, 0.85));
+    border: 1px solid rgba(255, 183, 3, 0.18);
+    box-shadow: 0 20px 40px rgba(28, 28, 34, 0.12);
+  }
+
+  .glow-border {
+    border: 1px solid rgba(255, 183, 3, 0.4);
+    box-shadow: 0 0 0 1px rgba(255, 183, 3, 0.2), 0 10px 30px rgba(28, 28, 34, 0.12);
+  }
+}
+

@@ -1,0 +1,105 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+@import './motifs.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-navy-950 text-chalk-50 font-body antialiased;
+  margin: 0;
+  background-image: radial-gradient(circle at 10% 10%, rgba(255, 183, 3, 0.18), transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(109, 215, 200, 0.2), transparent 38%),
+    radial-gradient(circle at 50% 90%, rgba(255, 107, 107, 0.18), transparent 40%);
+}
+
+.floating-shape {
+  position: absolute;
+  border: 2px dashed rgba(255, 183, 3, 0.5);
+  opacity: 0.35;
+  border-radius: 24px;
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+.doodle-letter {
+  position: absolute;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgba(255, 107, 107, 0.35);
+  pointer-events: none;
+}
+
+.doodle-pencil {
+  position: absolute;
+  width: 120px;
+  height: 16px;
+  background: linear-gradient(90deg, #ffb703 0%, #ffd166 70%, #3a3a40 70%, #3a3a40 100%);
+  border-radius: 999px;
+  transform: rotate(-12deg);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.doodle-pencil::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid #f5f0e6;
+  transform: translateY(-50%);
+}
+
+.play-card {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.9), rgba(255, 248, 239, 0.9));
+  border: 2px solid rgba(255, 183, 3, 0.2);
+  box-shadow: 0 14px 30px rgba(28, 28, 34, 0.08);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  transition: transform 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: rgba(255, 183, 3, 0.3);
+}
