@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-chalk-800/60 px-6 py-6 text-center text-xs text-chalk-500">
-        © 2026 LEducation. Built for educators who demand clarity and performance.
+        Made by Awaiz Ahmed | 0504754950 | Abu Dhabi, UAE | awaiz42ad@gmail.com
       </div>
     </footer>
   );

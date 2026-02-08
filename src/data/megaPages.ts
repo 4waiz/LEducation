@@ -126,7 +126,7 @@ export const megaPages: MegaPage[] = [
     slug: 'contact',
     title: 'Contact',
     category: 'Resources',
-    summary: 'Request a demo or connect with our partnerships team.',
+    summary: 'Request a demo or connect with Awaiz Ahmed.',
     highlights: [
       '30-minute demo tailored to your priorities',
       'Security and privacy documentation included',

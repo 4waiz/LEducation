@@ -47,7 +47,7 @@ export default function Contact() {
               value={values.name}
               onChange={handleChange}
               error={errors.name}
-              placeholder="Alex Morgan"
+              placeholder="Awaiz Ahmed"
             />
             <FormField
               label="Email"
@@ -55,7 +55,7 @@ export default function Contact() {
               value={values.email}
               onChange={handleChange}
               error={errors.email}
-              placeholder="alex@district.edu"
+              placeholder="awaiz42ad@gmail.com"
             />
             <FormField
               label="Role / Title"
@@ -101,13 +101,13 @@ export default function Contact() {
             </ul>
           </div>
           <div className="rounded-2xl border border-chalk-800/60 bg-navy-900/70 p-6">
-            <div className="text-xs uppercase tracking-[0.3em] text-lime-400">HQ</div>
+            <div className="text-xs uppercase tracking-[0.3em] text-lime-400">Made by Awaiz Ahmed</div>
             <p className="mt-3 text-sm text-chalk-300">
-              2450 Mission Bay Drive<br />
-              San Francisco, CA 94158<br />
-              (415) 555-0132
+              0504754950<br />
+              Abu Dhabi, UAE<br />
+              awaiz42ad@gmail.com
             </p>
-            <p className="mt-3 text-xs text-chalk-500">Open to district visits by appointment.</p>
+            <p className="mt-3 text-xs text-chalk-500">Open to project inquiries by appointment.</p>
           </div>
         </div>
       </div>
